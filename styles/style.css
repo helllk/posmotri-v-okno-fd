@@ -34,7 +34,6 @@ ol {
 .page {
 display: flex;
 align-items: center;
-inline-size: 1200px;
 block-size: 100%;
 margin: auto;
 color: #fff;
@@ -81,9 +80,9 @@ height: 100%;
 .content__list-item {
 position: relative;
 overflow-y: scroll;
-block-size: 298px;
+block-size: 130px;
 scrollbar-width: none;
-gap: 10px;
+gap: 1px;
 }
 
 .content__list {
@@ -177,7 +176,7 @@ text-transform: uppercase;
 }
 
 .content__accent {
-color: #545050;
+color: #808080
 }
 
 /* убрать подчеркивание */
@@ -219,6 +218,24 @@ inline-size: 100%;
 align-self: flex-end;
 }
 
+.button:active {
+  background-color: #000000;
+}
+
+.button:hover {
+  text-decoration: underline 1px #FFF;
+}
+
+/* кнопка при нажатии */
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #FFF;
+  outline-offset: 1px;
+}
 
 /* объединение */
 
@@ -283,6 +300,16 @@ display: block;
 border: 1px solid #FFF;
 inline-size: 19px;
 block-size: 19px;
+}
+
+/* выбор чекбокса */
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  content: '';
+  display: block;
+  background-color: #FFF;
+  inline-size: 15px;
+  block-size: 15px;
+  margin: 1px;
 }
 
 /* ТЕМПЛЕЙТЫ */
