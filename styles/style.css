@@ -1,3 +1,4 @@
+
 *,
 *::before,
 *::after {
@@ -44,11 +45,10 @@ inline-size: 1200px;
 block-size: 100%;
 }
 
-/* наполнение */
+/* наполнение */ /* delite absolute position */
 
 .content {
 display: flex;
-position: absolute;
 align-items: flex-end;
 gap: 30px;
 inline-size: 100%;
@@ -63,11 +63,12 @@ align-items: flex-start;
 }
 
 /* CONTENT */
-/* content__list-container */
+/* content__list-container */ /* add position relative */
 
 .content__list-container {
 overflow-y: auto;
 height: 298px;
+position: relative; 
 }
 
 /* детали */
@@ -79,18 +80,18 @@ height: 100%;
 
 .content__list-item {
 position: relative;
-overflow-y: scroll;
 block-size: 130px;
-scrollbar-width: none;
 gap: 1px;
 }
 
 .content__list {
 position: relative;
-overflow-y: scroll;
+overflow-y: auto;
+overflow: hidden;
 block-size: 298px;
-scrollbar-width: none;
+gap: 30px;
 }
+
 
 /* VIDEO */
 /* контейнер под видео */ 
@@ -131,10 +132,14 @@ font-weight: 400;
 line-clamp: auto;
 }
 
+/* change 100% -> 1 */
+
 .content__video-card-description-container {
-flex-grow: 100%;
+flex-grow: 1;
 color: #FFF;
 }
+
+/* add styles */
 
 .content__video-card-title {
 color: #FFF;
@@ -144,6 +149,10 @@ font-size: 30px;
 line-height: 1;
 text-transform: uppercase;
 hyphens: auto;
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+max-width: 192px; 
 }
 
 video {
@@ -181,11 +190,25 @@ color: #808080
 
 /* убрать подчеркивание */
 
+/* add color */
+
 .content__card-link {
 display: block;
 text-decoration: none;
+color: #fff;
 }
 
+/* add active */
+
+.content__card-link:active {
+  background-color: #545050;
+}
+
+/* add hover */
+
+.content__card-link:hover {
+  text-decoration: underline 1px #FFF;
+}
 
 /* FORMS STYLE */
 
@@ -214,12 +237,16 @@ cursor: pointer;
 inline-size: 100%;
 }
 
+/* кнопка найти */
+
 .search-form__submit-button {
 align-self: flex-end;
 }
 
+/* change colour */
+
 .button:active {
-  background-color: #000000;
+  background-color: #545050;
 }
 
 .button:hover {
@@ -236,6 +263,16 @@ align-self: flex-end;
   outline: 1px solid #FFF;
   outline-offset: 1px;
 }
+
+/* more-button */
+
+.more-button {
+  width: 100%;
+}
+
+.content__list-container+ .more-button {
+
+} 
 
 /* объединение */
 
