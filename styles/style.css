@@ -59,6 +59,7 @@ inline-size: 100%;
 display: flex; 
 justify-content: space-between; 
 align-items: flex-start; 
+max-width: 711px;
 } 
  
 /* CONTENT */ 
@@ -100,8 +101,9 @@ align-self: flex-end;
  
 .result__video-container { 
 position: relative; 
-inline-size: 700px; 
+inline-size: 711px; 
 object-fit: cover; 
+margin: 0 0 11px;
 } 
  
 .result__video { 
@@ -241,12 +243,13 @@ font-size: 18px;
 text-align: center; 
 background-color: transparent; 
 cursor: pointer; 
-inline-size: 100%; 
+inline-size: 394px; 
+position: end; 
 } 
  
-.search-form__submit-button { 
-align-self: flex-end; 
-} 
+.search-form__submit-button {
+  align-self: end;
+}
  
 .button:active { 
   background-color: #545050; 
