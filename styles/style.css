@@ -69,7 +69,6 @@ max-width: 711px;
 height: 298px;
 position: relative;
 overflow-y: auto; /* вертикальный скролл */
-overflow-x: hidden; /* горизонтальный скролл скрыт */
 padding-right: 10px;
 max-height: 298px; /* ограничиваем высоту контейнера для скролла */
 } 
@@ -244,7 +243,6 @@ text-align: center;
 background-color: transparent; 
 cursor: pointer; 
 inline-size: 504px; 
-position: end; 
 } 
  
 .search-form__submit-button {
