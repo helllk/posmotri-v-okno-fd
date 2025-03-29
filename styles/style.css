@@ -246,7 +246,6 @@ inline-size: 520px;
  
 .search-form__submit-button {
   align-self: end;
-  margin: 0 0 0 4px;
 }
  
 .button:active { 
