@@ -348,7 +348,7 @@ margin: 1px 0 0 1px;
 .search-form__checkbox-list { 
 content: ''; 
 display: flex; 
-gap: 15px; 
+gap: 20px; 
 } 
  
 .search-form__pseudo-checkbox { 
