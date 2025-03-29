@@ -100,7 +100,6 @@ align-self: flex-end;
 .result__video-container { 
 position: relative; 
 inline-size: 711px; 
-height: 376px;
 object-fit: cover; 
 margin: 0 0 11px;
 } 
