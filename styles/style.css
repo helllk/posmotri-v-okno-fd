@@ -69,7 +69,6 @@ max-width: 711px;
 height: 298px;
 position: relative;
 overflow-y: auto; /* вертикальный скролл */
-padding-right: 10px;
 max-height: 298px; /* ограничиваем высоту контейнера для скролла */
 } 
  
