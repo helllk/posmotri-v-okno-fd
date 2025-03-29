@@ -109,7 +109,6 @@ inline-size: 100%;
 block-size: 100%; 
 object-fit: cover; 
 object-position: center; 
-min-height: 411px;
 } 
  
 .content__video-card { 
